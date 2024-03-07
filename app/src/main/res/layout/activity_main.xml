@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:id="@+id/l_search">
+
+        <EditText
+            android:id="@+id/search_tag"
+            android:hint="Тег"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"/>
+        <EditText
+            android:layout_toEndOf="@+id/search_tag"
+            android:id="@+id/search"
+            android:hint="Поиск"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScV_courses"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/l_search">
+        <RelativeLayout
+            android:id="@+id/l_courses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <HorizontalScrollView
+                android:id="@+id/androidStudioCursesHScV"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/androidStudioCurses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/androidStudioCurses_tag"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="Android Studio" />
+
+                <ImageView android:id="@+id/a_1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/necocoursesandroidstudio"
+                    />
+                <ImageView android:id="@+id/a_2"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/gfgandroidstudio"
+                    />
+
+
+
+            </LinearLayout>
+            </HorizontalScrollView>
+            <HorizontalScrollView
+                android:id="@+id/EnglishCoursesHScV"
+                android:layout_below="@id/androidStudioCursesHScV"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:id="@+id/EnglishCourses"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/androidStudioCurses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_height="wrap_content" android:layout_width="90dp"
+                        android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                        android:id="@+id/EnglishCourses_tag"
+                        android:text="English"
+                        />
+                    <ImageView android:id="@+id/e_1"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/i"
+                        />
+                    <ImageView android:id="@+id/e_2"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/i"
+                        />
+                    <ImageView android:id="@+id/e_3"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/i"
+                        />
+                    <ImageView android:id="@+id/e_4"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/i"
+                        />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <HorizontalScrollView
+                android:id="@+id/JavaCoursesHScV"
+                android:layout_below="@+id/EnglishCoursesHScV"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <LinearLayout
+                android:id="@+id/JavaCourses"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/EnglishCourses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_height="wrap_content" android:layout_width="90dp"
+                    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    android:text="Java"
+                    android:id="@+id/JavaCurses_tag"
+                    />
+
+                <ImageView android:id="@+id/j_1"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/i"
+                    />
+                <ImageView android:id="@+id/j_2"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/i"
+                    />
+                <ImageView android:id="@+id/j_3"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/i"
+                    />
+                <ImageView android:id="@+id/j_4"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/i"
+                    />
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/l_menu"
+    android:background="@color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal" >
+        <ImageButton
+        android:src="@drawable/courses_im"
+        android:id="@+id/btn_courses"
+        android:layout_width="50px"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"/>
+
+        <ImageButton
+        android:src="@drawable/tests_im"
+        android:id="@+id/btn_tests"
+        android:layout_width="50px"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="1dp"
+        android:layout_weight="1"/>
+        <ImageButton
+            android:id="@+id/btn_profile"
+            android:src="@drawable/profile_im"
+            android:layout_width="50px"
+            android:background="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+</RelativeLayout>

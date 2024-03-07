@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:id="@+id/ScV_courses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <RelativeLayout android:id="@+id/course_layo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:gravity="center"
+            android:text="EXAMLE TEXT"
+            android:id="@+id/name_of_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <ImageView
+            android:layout_below="@id/name_of_course"
+            android:id="@+id/imv_courseim"
+            android:src="@drawable/i"
+            android:foregroundGravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <TextView
+            android:id="@+id/description"
+            android:layout_below="@id/imv_courseim"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXT EXAMPLE TEXTEXAMPLE TEXT"/>
+        <LinearLayout
+            android:id="@+id/pricelayo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/priceTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:text="20"
+            android:textSize="30dp"/>
+
+            <Button android:id="@+id/buybtn"
+                android:text="Купить"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@id/pricelayo"
+            android:id="@+id/comments_layo"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/comment_sender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                >
+            <EditText android:layout_height="match_parent"
+                android:layout_width="290dp"
+                android:id="@+id/ET_comm"
+                android:hint="Введите ваш комментарий"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="0"
+                />
+                <Button
+                    android:id="@+id/btn_send_comm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Отправить"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/TV_comments"
+                android:layout_below="@id/comment_sender"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
